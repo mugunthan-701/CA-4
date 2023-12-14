@@ -16,10 +16,17 @@
   flex-direction: column;
   align-items: center;
 }
-body{
-  background: linear-gradient(180deg, #B3F6FF 0%, #6FFFCB 100%);
+#body{
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ border:2px solid;
+  top: 0;
 }
 #nav-bar{
   /* border: 2px solid red; */
@@ -39,7 +46,7 @@ body{
   right: 1%;
   width: max-content; 
   height: max-content;
-  background-color: white;
+  /* background-color: white; */
 }
 
 #main{
@@ -47,21 +54,19 @@ background-color: rgba(255, 255, 255, 0.50);
 stroke-width: 4px;
 stroke: #000;
 filter: drop-shadow(13px 4px 4px rgba(0, 0, 0, 0.25));
-height: 450px;
+height: 470px;
 width: 500px;
 }
 #main1{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(0, 0, 0);
 }
 ul{
   margin: 30px;
   list-style-type:none;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  /* border: solid; */
   height: 200px;
 }
 #num-ques{
@@ -75,13 +80,12 @@ line-height: normal;
 #question{
   color: #000;
 font-family: Darumadrop One;
-font-size: 25px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
 #sec-div{
-  border: 1px solid #000;
 background: rgba(221, 182, 151, 0.77);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 width: 400px;
@@ -90,6 +94,7 @@ height: 300px;
 #prim-div{
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 button{
   border-radius: 5px;
@@ -125,7 +130,6 @@ align-items: center;
 height: 450px;
 }
 #result-but{
-margin: 70px;
 font-size: 30px;
 border: 1px solid #000;
 background: #DDB697;
@@ -135,6 +139,10 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   height: 50px;
   margin: 10px;
 }
-.high:hover{
-  background-color: #FF979E;
+.light-button:hover {
+  background-color: rgb(255, 97, 97);
+}
+
+.dark-button:hover {
+  background-color: rgb(95, 93, 93);
 }
